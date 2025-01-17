@@ -1,0 +1,26 @@
+body {
+  background-color: antiquewhite;
+}
+
+.app {
+  display: flex;
+  align-items: start;
+  justify-items: flex-start;
+}
+
+.card {
+  display: flex;
+}
+
+.title {
+  color: lightblue;
+  border: 1px solid lightblue;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+img {
+  align-self: center;
+  text-align: justify;
+}
