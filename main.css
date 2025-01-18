@@ -1,26 +1,67 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(236, 188, 125);
 }
 
-.app {
-  display: flex;
-  align-items: start;
-  justify-items: flex-start;
+.agu-display-agu> {
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
 }
 
 .card {
+  background-color: rgb(236, 188, 125);
+  font-family: "Agu Display", serif;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 
-.title {
-  color: lightblue;
-  border: 1px solid lightblue;
-  text-align: center;
+header {
   font-size: large;
   font-weight: bold;
 }
 
-img {
-  align-self: center;
-  text-align: justify;
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.sold-out-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 20%;
+opacity: 0.7;
+pointer-events: none;
+margin-top: 10%;
+}
+
+.card-title {
+  border-bottom: 1px solid black;
+}
+
+.card-at {
+  text-align: center;
+}
+
+.card-price {
+  font-size: small;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
